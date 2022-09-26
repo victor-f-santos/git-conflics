@@ -2,11 +2,15 @@
   --font: system-ui;
   --max-width: 60ch;
   --body-padding: 2rem;
+
   --color-text: rgb(0, 0, 0, 0.9);
   --color-text-light: rgb(0, 0, 0, 0.6);
 }
 
 body {
+  width: min(var(--max-width), 100% - var(--body-padding));
+  margin: 0 auto;
+  color: var(--color-text);
   font-family: var(--font);
   color: var(--color-text);
   margin: 0 auto;
@@ -15,6 +19,6 @@ body {
 
 footer {
   margin-top: 2rem;
-  font-size: 0.8rem;
   color: var(--color-text-light);
+  font-size: 0.8rem;
 }
